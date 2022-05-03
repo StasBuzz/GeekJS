@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+     <h1>Урок 1</h1> 
+     <button onclick="Task_1()">Задание 1</button>
+     <button onclick="Task_2()">Задание 2</button>
+     <button onclick="Task_3()">Задание 3</button>
+     <button onclick="Task_4()">Задание 4</button>  
+     <button onclick="Task_5()">Задание 5</button>
+</body>
+
+<script>
+    function Task_1() {
+        let Ts = +prompt('Введите температуру в Цельсиях ');
+        console.log(`Температура по Фаренгейту равна: ${fromCelsToFar(Ts)}`);
+    }
+
+    function fromCelsToFar(cels) {
+        return (9 / 5) * cels + 32;
+    }
+
+    function Task_2() {
+        console.log('Сделано.)')
+    }
+
+    function Task_3() {
+        let name = 'Василий';
+        let admin = name; 
+        console.log(admin);
+    }
+
+    function Task_4() {
+        console.log(1000 + '108');
+    }
+
+    function Task_5() {
+        console.log('Сделано.)')
+    }
+
+</script>
+</html>
